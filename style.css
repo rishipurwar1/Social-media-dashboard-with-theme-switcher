@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(230, 17%, 14%);
+    padding-top: 30px;
+}
+
+.social-media {
+    width: 85%;
+}
+
+.social-media h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.social-media p {
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid hsl(228, 34%, 66%);
+}
+
+.dark p {
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+}
+
+
+.dark {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 85%;
+}
+
+.counter .social {
+    width: 100%;
+    height: 240px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 10px;
+}
+
+.counter .fb {
+    border-top: 5px solid hsl(195, 100%, 50%);
+}
+
+.counter .tw {
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.counter .insta {
+    padding: .5rem;
+    border-top: 5px solid transparent;
+    background: 
+        linear-gradient(to right, hsl(228, 28%, 20%), hsl(228, 28%, 20%)), 
+        linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%)); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.counter .yt {
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.social h3 {
+    color: hsl(228, 34%, 66%);
+    font-size: 14px;
+    text-align: center;
+    /* padding-top: 15px; */
+}
+
+.user img {
+    padding-right: 10px;
+    margin-bottom: -4px;
+}
+
+.today img {
+    padding-right:5px;
+    margin-bottom: 2px;
+}
+
+.social h1 {
+    padding-top: 20px;
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+}
+
+.social p {
+    padding-top: 4px;
+    color: hsl(228, 34%, 66%);
+    letter-spacing: 6px;
+    font-size: 14px;
+}
+
+.social .up {
+    display: inline;
+}
+
+.social .today {
+    display: inline;
+    padding-top: 25px;
+    color: hsl(0, 6%, 90%);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Toggle button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 1px;
+    bottom: 0;
+    background: linear-gradient(to right, hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 5px;
+    bottom: 4px;
+    background-color: hsl(230, 17%, 14%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* Overview */
+
+  .overview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 85%;
+  }
+
+.overview h2 {
+    color: #fff;
+    font-weight: 700;
+}
+
+  .daily-counter {
+      width: 100%;
+      
+  }
+
+  .social-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 150px;
+    background-color: hsl(228, 28%, 20%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.social-count .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.social-count .count {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading h4 {
+    color: hsl(228, 34%, 66%);
+}
+
+.count h3 {
+    color: #fff;
+    font-size: 35px;
+}
+
+.count h5 {
+    color: hsl(163, 72%, 41%);
+}
+
+.count .red {
+    color: hsl(356, 69%, 56%);
+}
+
