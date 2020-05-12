@@ -163,6 +163,20 @@ body {
     color: hsl(356, 69%, 56%);
 }
 
+footer {
+    padding-bottom: 20px;
+}
+
+footer span {
+    padding-right: 8px;
+    color: hsl(356, 69%, 56%);
+    font-size: 14px;
+}
+
+footer a {
+    color: hsl(195, 100%, 50%);
+}
+
 /* Toggle button */
 .switch {
     position: relative;
@@ -384,6 +398,18 @@ body {
     .counter {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+    }
+    footer span {
+        font-size: 12px;
     }
 }
 
