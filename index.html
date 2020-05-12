@@ -9,39 +9,39 @@
 <body>
     <div class="main-container">
         <div class="social-media">
-            <h2>Social Media Dashboard</h2>
-            <p>Total Followers: 23,004</p>
+            <h2 class="social" id="social">Social Media Dashboard</h2>
+            <p id="followers">Total Followers: 23,004</p>
         </div>
         <div class="dark">
-            <p>Dark Mode</p>
+            <p id="dark">Dark Mode</p>
             <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
+                <input id="toggle-color" type="checkbox">
+                <span class="slider round" id="toggle-btn"></span>
             </label>
         </div>
     </div>
     <div class="counter">
-        <div class="social fb">
+        <div class="social fb card-bg">
             <h3 class="user"><img src="/images/icon-facebook.svg" alt="">@nathanf</h3>
-            <h1>1987</h1>
+            <h1 class="number">1987</h1>
             <p>FOLLOWERS</p>
             <span class="today green"><img src="/images/icon-up.svg" alt="">12 Today</span>
         </div>
-        <div class="social tw">
+        <div class="social tw card-bg">
             <h3 class="user"><img src="/images/icon-twitter.svg" alt="">@nathanf</h3>
-            <h1>1044</h1>
+            <h1 class="number">1044</h1>
             <p>FOLLOWERS</p>
             <span class="today green"><img src="/images/icon-up.svg" alt="">99 Today</span>
         </div>
-        <div class="social insta">
+        <div class="social insta card-bg" id="insta">
             <h3 class="user"><img src="/images/icon-instagram.svg" alt="">@nathanf</h3>
-            <h1>11k</h1>
+            <h1 class="number">11k</h1>
             <p>FOLLOWERS</p>
             <span class="today green"><img src="/images/icon-up.svg" alt="">1099 Today</span>
         </div>
-        <div class="social yt">
+        <div class="social yt card-bg">
             <h3 class="user"><img src="/images/icon-youtube.svg" alt="">@nathanf</h3>
-            <h1>8239</h1>
+            <h1 class="number">8239</h1>
             <p>FOLLOWERS</p>
             <span class="today redy"><img class="redy" src="/images/icon-down.svg" alt="">144 Today</span>
         </div>
@@ -49,7 +49,7 @@
     <div class="overview">
         <h2>Overview - Today</h2>
         <div class="daily-counter">
-            <div class="facebook social-count">
+            <div class="facebook social-count card-bg">
                 <div class="heading face-heading">
                     <h4>Page Views</h4>
                     <img src="/images/icon-facebook.svg" alt="">
@@ -59,7 +59,7 @@
                     <h5><img src="/images/icon-up.svg" alt="">3%</h5>
                 </div>
             </div>
-            <div class="facebook social-count">
+            <div class="facebook social-count card-bg">
                 <div class="heading face-heading">
                     <h4>Likes</h4>
                     <img src="/images/icon-facebook.svg" alt="">
@@ -69,7 +69,7 @@
                     <h5 class="red"><img src="/images/icon-down.svg" alt="">2%</h5>
                 </div>
             </div>
-            <div class="instagram social-count">
+            <div class="instagram social-count card-bg">
                 <div class="heading face-heading">
                     <h4>Likes</h4>
                     <img src="/images/icon-instagram.svg" alt="">
@@ -79,7 +79,7 @@
                     <h5><img src="/images/icon-up.svg" alt="">2257%</h5>
                 </div>
             </div>
-            <div class="instagram social-count">
+            <div class="instagram social-count card-bg">
                 <div class="heading face-heading">
                     <h4>Profile Views</h4>
                     <img src="/images/icon-instagram.svg" alt="">
@@ -89,7 +89,7 @@
                     <h5><img src="/images/icon-up.svg" alt="">1375%</h5>
                 </div>
             </div>
-            <div class="twitter social-count">
+            <div class="twitter social-count card-bg">
                 <div class="heading face-heading">
                     <h4>Retweets</h4>
                     <img src="/images/icon-twitter.svg" alt="">
@@ -99,7 +99,7 @@
                     <h5><img src="/images/icon-up.svg" alt="">303%</h5>
                 </div>
             </div>
-            <div class="twitter social-count">
+            <div class="twitter social-count card-bg">
                 <div class="heading face-heading">
                     <h4>Likes</h4>
                     <img src="/images/icon-twitter.svg" alt="">
@@ -109,7 +109,7 @@
                     <h5><img src="/images/icon-up.svg" alt="">553%</h5>
                 </div>
             </div>
-            <div class="youtube social-count">
+            <div class="youtube social-count card-bg">
                 <div class="heading face-heading">
                     <h4>Likes</h4>
                     <img src="/images/icon-youtube.svg" alt="">
@@ -119,7 +119,7 @@
                     <h5 class="red"><img src="/images/icon-down.svg" alt="">19%</h5>
                 </div>
             </div>
-            <div class="youtube social-count">
+            <div class="youtube social-count card-bg">
                 <div class="heading face-heading">
                     <h4>Total Views</h4>
                     <img src="/images/icon-youtube.svg" alt="">

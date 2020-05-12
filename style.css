@@ -27,7 +27,7 @@ body {
     width: 100%;
 }
 
-.social-media h2 {
+.social {
     color: #fff;
     font-size: 30px;
 }
@@ -61,8 +61,6 @@ body {
     width: 85%;
 }
 
-
-
 .counter .social {
     cursor: pointer;
     width: 100%;
@@ -77,9 +75,9 @@ body {
     border-radius: 10px;
 }
 
-/* .counter .social:hover {
-    background-color: hsla(229, 27%, 20%, 0.6);
-} */
+.counter .social:hover {
+    background-color: #383f61;
+}
 
 .counter .fb {
     border-top: 5px solid hsl(195, 100%, 50%);
@@ -99,15 +97,17 @@ body {
     background-origin: padding-box, border-box;
 }
 
-/* .counter .insta:hover {
+.counter .insta:hover {
     padding: .5rem;
     border-top: 5px solid transparent;
     background:
-    linear-gradient(to right,hsla(229, 27%, 20%, 0.6),hsla(229, 27%, 20%, 0.6)),
-    linear-gradient(to top,	hsla(37, 97%, 70%) , hsl(329, 70%, 58%)); 
+    linear-gradient(to right,#383f61,#383f61 ),
+    linear-gradient(to right,	hsla(37, 97%, 70%) , hsl(329, 70%, 58%)); 
+
+
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
-} */
+}
 
 .counter .yt {
     border-top: 5px solid hsl(348, 97%, 39%);
@@ -200,14 +200,6 @@ body {
     -webkit-transition: .4s;
     transition: .4s;
   }
-
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
   
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
@@ -251,6 +243,7 @@ body {
   }
 
   .social-count {
+      cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,6 +255,10 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 20px;
+}
+
+.social-count:hover {
+    background-color: #383f61;
 }
 
 .social-count .heading {
@@ -299,6 +296,88 @@ body {
 .count img {
     padding-right: 5px;
     margin-bottom: 2px;
+}
+
+
+/* toggle button functionality */
+.bg {
+    background-color: #fff;
+}
+
+.socialHeading {
+    color: hsl(230, 17%, 14%);
+}
+
+.social-media p.follower {
+    color: hsl(230, 22%, 74%);
+}
+
+.dark p.mode {
+    color: hsl(230, 22%, 74%);
+}
+
+.counter .social.card {
+    background-color: hsl(227, 47%, 96%);
+}
+
+.counter .social.card:hover {
+    background-color: rgba(174, 179, 203, 0.4);
+}
+
+.social-count.card {
+    background-color: hsl(227, 47%, 96%);
+}
+
+.social-count.card:hover {
+    background-color: #e0e2eb;
+}
+
+.social h1.follower {
+    color: hsl(230, 17%, 14%);
+}
+
+.social h3.name {
+    color: hsl(228, 12%, 44%);
+}
+
+.overview h2.head {
+    color: hsl(228, 12%, 44%);
+}
+
+.heading h4.status {
+    color: hsl(228, 12%, 44%);
+}
+
+.count h3.number {
+    color: #000000;
+}
+
+.counter .insta.instabg {
+    padding: .5rem;
+    border-top: 5px solid transparent;
+    background: 
+        linear-gradient(to right, hsl(227, 47%, 96%),hsl(227, 47%, 96%)), 
+        linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%)); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.counter .insta.instabg:hover {
+    padding: .5rem;
+    border-top: 5px solid transparent;
+    background: 
+        linear-gradient(to right, #e0e2eb,#e0e2eb), 
+        linear-gradient(to right, hsl(37, 97%, 70%) , hsl(329, 70%, 58%)); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.slider.toggled {
+    background: hsl(230, 22%, 74%);
+}
+
+.slider.rounded:before {
+    background-color: hsl(225, 100%, 98%);
 }
 
 @media (min-width: 480px) {
